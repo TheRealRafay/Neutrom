@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neutron</title>
+  <link rel="icon" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+
+    <header>
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1>Neutron</h1>
+    </header>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <div class="tab active" onclick="switchTab(0)">Tab 1</div>
+      <div class="tab" onclick="switchTab(1)">Tab 2</div>
+      <button class="new-tab-btn" onclick="addTab()">+</button>
+    </div>
+
+    <!-- Search container -->
+    <div class="search-container">
+      <input type="text" id="queryInput" placeholder="Search Google or GPT (gpt: question)">
+      <button onclick="search()">Search</button>
+    </div>
+
+    <!-- Results -->
+    <div id="resultsContainer">
+      <div class="results active" id="results-0"></div>
+      <div class="results" id="results-1"></div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
